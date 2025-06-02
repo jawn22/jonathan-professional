@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Product Manager & Decarbonisation Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #1a202c; /* Dark background for hero */
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-8 text-center;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;
+        }
+        .nav-link-active {
+            @apply bg-gray-900 text-white;
+        }
+        .stat-card {
+            @apply bg-green-500 text-white p-6 rounded-lg shadow-md text-center;
+        }
+        .home-assistant-card {
+            @apply bg-blue-500 text-white p-6 rounded-lg shadow-md;
+        }
+        .icon-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: #e2e8f0; /* Light gray */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .icon-placeholder i {
+            font-size: 2rem;
+            color: #4a5568; /* Darker gray for icon */
+        }
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700">
+
+    <nav class="bg-gray-800 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl text-white">Your Name</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link nav-link-active" id="nav-home">Home</a>
+                        <a href="#about" class="nav-link" id="nav-about">About</a>
+                        <a href="#product" class="nav-link" id="nav-product">Product Management</a>
+                        <a href="#decarbonisation" class="nav-link" id="nav-decarbonisation">Decarbonisation</a>
+                        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block nav-link nav-link-active">Home</a>
+                <a href="#about" class="block nav-link">About</a>
+                <a href="#product" class="block nav-link">Product Management</a>
+                <a href="#decarbonisation" class="block nav-link">Decarbonisation</a>
+                <a href="#contact" class="block nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-bg text-white pt-20 pb-20 md:pt-32 md:pb-32">
+        <div class="container mx-auto px-6 text-center">
+            <img src="https://placehold.co/150x150/ffffff/1a202c?text=You" alt="Your Name" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full shadow-xl mb-6 border-4 border-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm [Your Name]</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">Product Manager driving innovation & Passionate about Home Decarbonisation</p>
+            <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Get in Touch</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <div class="max-w-3xl mx-auto text-center text-lg text-gray-600 space-y-4">
+                    <p>Hello! I'm [Your Name], a results-oriented Product Manager with [X] years of experience in [mention your industry/domain, e.g., SaaS, e-commerce, tech]. I thrive on understanding user needs, defining product vision, and leading cross-functional teams to deliver impactful solutions.</p>
+                    <p>Beyond my professional life, I'm deeply passionate about sustainability and leveraging technology for a greener future. At home, I've dived into the world of Home Assistant, creating a smart ecosystem that not only enhances convenience but actively helps in monitoring and reducing my carbon footprint. This hands-on experience with IoT and data analysis fuels my problem-solving approach in all aspects of my work.</p>
+                    <p>I believe in [mention a core value or philosophy, e.g., continuous learning, data-driven decisions, user-centricity] and I'm always eager to connect with like-minded individuals and explore new challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="product" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Product Management Expertise</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card p-6">
+                        <div class="icon-placeholder"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Product Strategy & Vision</h3>
+                        <p class="text-gray-600">Expertise in defining and communicating product vision, strategy, and roadmaps aligned with business goals and market opportunities. Proven ability to conduct market research and competitive analysis.</p>
+                    </div>
+                    <div class="card p-6">
+                        <div class="icon-placeholder"><i class="fas fa-users"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Agile & Scrum Leadership</h3>
+                        <p class="text-gray-600">Experienced in leading agile development teams, facilitating scrum ceremonies, and managing product backlogs. Certified Scrum Product Owner (CSPO) or similar (if applicable).</p>
+                    </div>
+                    <div class="card p-6">
+                        <div class="icon-placeholder"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Data-Driven Decisions</h3>
+                        <p class="text-gray-600">Skilled in using analytics, A/B testing, and user feedback to inform product decisions, measure success, and iterate on features for optimal performance.</p>
+                    </div>
+                    <div class="card p-6">
+                        <div class="icon-placeholder"><i class="fas fa-cogs"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Technical Acumen</h3>
+                        <p class="text-gray-600">Solid understanding of [mention relevant technologies, e.g., APIs, cloud platforms, software architecture] enabling effective communication with engineering teams.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#your-linkedin-profile-url" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                        <i class="fab fa-linkedin mr-2"></i> View My LinkedIn Profile
+                    </a>
+                    <!-- <a href="your-resume.pdf" target="_blank" class="ml-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                        <i class="fas fa-file-alt mr-2"></i> Download Resume
+                    </a> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="decarbonisation" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Decarbonisation Journey with Home Assistant</h2>
+                <p class="max-w-3xl mx-auto text-center text-lg text-gray-600 mb-12">I'm passionate about using technology to make a tangible impact on sustainability. My Home Assistant setup is a core part of this, allowing me to monitor, automate, and optimize energy usage in my home.</p>
+
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="home-assistant-card space-y-4">
+                        <h3 class="text-2xl font-semibold text-center mb-4"><i class="fas fa-cogs mr-2"></i>My Smart Home Setup</h3>
+                        <p><strong class="font-semibold">Core:</strong> Raspberry Pi running Home Assistant OS.</p>
+                        <p><strong class="font-semibold">Energy Monitoring:</strong> [e.g., Shelly EM, Emporia Vue, specific smart plugs with energy monitoring]. This allows me to track real-time and historical energy consumption of key appliances.</p>
+                        <p><strong class="font-semibold">Smart Devices:</strong> [e.g., Smart thermostats (Nest, Ecobee), smart lighting (Philips Hue, Zigbee bulbs), smart plugs for various appliances].</p>
+                        <p><strong class="font-semibold">Automations:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Turning off lights in unoccupied rooms.</li>
+                                <li>Optimizing heating/cooling schedules based on occupancy and weather.</li>
+                                <li>Alerting on high energy usage anomalies.</li>
+                                <li>[Add another specific automation you've implemented]</li>
+                            </ul>
+                        </p>
+                        <p class="mt-4">This setup provides granular data that I use to identify inefficiencies and make informed decisions to reduce my energy footprint.</p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="card p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3"><i class="fas fa-leaf mr-2 text-green-500"></i>Energy Savings & Impact</h3>
+                            <p class="text-gray-600 mb-4">Through careful monitoring and automation, I've been able to achieve (or aim to achieve):</p>
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="stat-card">
+                                    <p class="text-3xl font-bold">[X]%</p>
+                                    <p>Reduction in electricity usage (example)</p>
+                                </div>
+                                <div class="stat-card">
+                                    <p class="text-3xl font-bold">[Y] kWh</p>
+                                    <p>Saved annually (example)</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">This translates not only to cost savings but also a direct reduction in my household's carbon emissions. My next goal is to [mention a future goal, e.g., integrate solar panel data, optimize EV charging].</p>
+                        </div>
+
+                        <div class="card p-6">
+                             <h3 class="text-xl font-semibold text-gray-800 mb-3"><i class="fas fa-chart-bar mr-2 text-blue-500"></i>Visualizing My Impact (Example)</h3>
+                             <p class="text-gray-600 mb-4">Home Assistant allows for powerful visualizations. Below is a conceptual representation of how I track energy usage:</p>
+                             <img src="https://placehold.co/600x300/e2e8f0/4a5568?text=Energy+Usage+Dashboard+Mockup" alt="Energy Usage Dashboard Mockup" class="rounded-lg shadow-md w-full">
+                             <p class="text-sm text-gray-500 mt-2 text-center">This could be a screenshot of your actual Home Assistant dashboard or a simplified graph.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <p class="text-lg text-gray-700">Want to discuss smart home sustainability or share ideas? Let's connect!</p>
+                    <!-- <a href="#your-blog-post-url" target="_blank" class="mt-4 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                        <i class="fas fa-book-open mr-2"></i> Read More on My Blog
+                    </a> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-gray-800 text-gray-300">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Let's Connect</h2>
+                <p class="max-w-xl mx-auto text-center text-lg mb-10">I'm always open to discussing new product challenges, innovative tech, decarbonisation strategies, or just connecting with interesting people. Feel free to reach out!</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+                    <a href="mailto:your.email@example.com" class="inline-flex items-center text-lg hover:text-green-400 transition duration-300">
+                        <i class="fas fa-envelope fa-fw mr-3 text-xl"></i> your.email@example.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-lg hover:text-green-400 transition duration-300">
+                        <i class="fab fa-linkedin fa-fw mr-3 text-xl"></i> LinkedIn Profile
+                    </a>
+                    <!-- <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-lg hover:text-green-400 transition duration-300">
+                        <i class="fab fa-github fa-fw mr-3 text-xl"></i> GitHub Profile
+                    </a> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; <span id="currentYear"></span> [Your Name]. All rights reserved.</p>
+        <p class="text-sm">Building a sustainable future, one line of code and one smart device at a time.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !expanded);
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Dynamic year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Active navigation link highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                // Adjust for sticky nav height if needed, e.g., section.offsetTop - navHeight
+                if (pageYOffset >= sectionTop - 70) { // 70 is a bit more than nav height
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            // Handle hero section separately as it's a header
+            const homeSection = document.getElementById('home');
+            if (pageYOffset < homeSection.offsetHeight - 70) {
+                 current = 'home';
+            }
+
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-link-active');
+                // For mobile and desktop links
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('nav-link-active');
+                }
+                // Ensure mobile menu links also get updated
+                const mobileLink = document.querySelector(`#mobile-menu a[href="#${current}"]`);
+                if (mobileLink) {
+                    document.querySelectorAll('#mobile-menu a').forEach(ml => ml.classList.remove('nav-link-active'));
+                    mobileLink.classList.add('nav-link-active');
+                }
+                 // Ensure desktop menu links also get updated
+                const desktopLink = document.querySelector(`nav .hidden.md\\:block a[href="#${current}"]`);
+                if (desktopLink) {
+                    document.querySelectorAll('nav .hidden.md\\:block a').forEach(dl => dl.classList.remove('nav-link-active'));
+                    desktopLink.classList.add('nav-link-active');
+                }
+            });
+        });
+
+        // Initial call to set active link on page load
+        window.dispatchEvent(new Event('scroll'));
+
+    </script>
+
+</body>
+</html>
